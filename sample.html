@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <script>
+            var emp = {
+    id:'1',
+    name:'ramakrishna',
+    email:'Rama@gmail.com',
+    phone:9533818684,
+    languages:['Telugu', 'English', 'Hindi'],
+
+    sisters:{
+        elder:'aaaaa',
+        younger:'bbbbb',
+    },
+
+    sisterDetails:[
+        {
+            name:'dhana',
+            age:28,
+        },
+        {
+            name:'vasanthi',
+            age:24
+        },
+        {
+            name:'kumari',
+            age:36
+        },
+    ],
+
+};
+
+document.write(`Employee ID: ${emp.id}<br>`);
+document.write(`Employee Name: ${emp.name}<br>`);
+document.write(`Employee email: ${emp.email}<br>`);
+document.write(`Employee Mobile Num: ${emp.phone}<br>`);
+document.write(`Employee Languages: ${emp.languages}<br><br>`);
+
+
+document.write(`sisters are:
+<ul>
+    <li>${emp.sisters.elder}</li>
+    <li>${emp.sisters.younger}</li>
+</ul><br><br>`);
+
+
+for(var c of emp.sisterDetails){
+    document.write(`<ul>
+        <li>${c.name}</li>
+        <li>${c.age}</li>
+        </ul>`)
+}
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
